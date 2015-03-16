@@ -1,8 +1,8 @@
 <?php 
 /*
-Plugin Name: JC Woocomerce Categories List
+Plugin Name: JC Woocommerce Categories List
 Plugin URI: http://webdesignjc.com/recaptchawp/index.html
-Description: The create list categories and product woocomerce 
+Description: The create list categories and product Woocommerce
 Version: 1.0
 Author: Julio Cesar LLavilla Ccama
 Autor URI: http://webdesignjc.com/
@@ -14,7 +14,7 @@ License: GPL2
 //add_action('init','functinit');
 add_action('admin_menu', 'jc_woocomerce_create_menu');
 function jc_woocomerce_create_menu() {
-	add_menu_page('JC Woocomerce Categories', 'JC Categories Settings', 'administrator', __FILE__, 'jc_woocomerce_settings_page',plugins_url('/images/icon.png', __FILE__));
+	add_menu_page('JC Woocommerce Categories', 'JC Categories Settings', 'administrator', __FILE__, 'jc_woocomerce_settings_page',plugins_url('/images/icon.png', __FILE__));
 	add_action( 'admin_init', 'jc_woocomerce_settings_categories' );
 }
 
